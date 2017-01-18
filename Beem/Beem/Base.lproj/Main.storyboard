@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Beem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="TLT-in-9ir">
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                <color key="tintColor" red="0.87843137250000003" green="0.3921568627" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="akE-od-lW9"/>
+                                </constraints>
+                            </progressView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9v-ua-CEp">
+                                <rect key="frame" x="0.0" y="78" width="375" height="473"/>
+                                <color key="backgroundColor" red="0.68961525916125921" green="0.718924695767727" blue="0.71117524511134667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="473" id="ZsE-Em-QoJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooX-WP-3Bk">
+                                <rect key="frame" x="138" y="559" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.3921568627" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6yy-ed-g5C"/>
+                                    <constraint firstAttribute="width" constant="100" id="B8c-L1-qCB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="recordButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="NIS-gw-eEG"/>
+                                    <action selector="recordButtonTouchUpOutSide:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="i36-y1-KeY"/>
+                                    <action selector="recordVideoButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pNH-qX-KLL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TLT-in-9ir" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5oa-4C-3TU"/>
+                            <constraint firstItem="ooX-WP-3Bk" firstAttribute="top" secondItem="U9v-ua-CEp" secondAttribute="bottom" constant="8" id="QBe-On-eUU"/>
+                            <constraint firstAttribute="trailing" secondItem="U9v-ua-CEp" secondAttribute="trailing" id="SqV-oP-8kY"/>
+                            <constraint firstItem="ooX-WP-3Bk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="The-po-cfy"/>
+                            <constraint firstItem="U9v-ua-CEp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bqP-rI-FFW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ooX-WP-3Bk" secondAttribute="bottom" constant="8" id="qra-pX-dM0"/>
+                            <constraint firstItem="TLT-in-9ir" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="uxU-G4-kbk"/>
+                            <constraint firstAttribute="trailing" secondItem="TLT-in-9ir" secondAttribute="trailing" id="xbZ-s0-kHq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="U9v-ua-CEp" id="hFT-k3-QbL"/>
+                        <outlet property="recordButtonHeightConstraint" destination="6yy-ed-g5C" id="Phy-Dg-muR"/>
+                        <outlet property="recordButtonWidthConstraint" destination="B8c-L1-qCB" id="BrN-45-NID"/>
+                        <outlet property="recordVideoButton" destination="ooX-WP-3Bk" id="J19-Z8-yFu"/>
+                        <outlet property="videoProgressBar" destination="TLT-in-9ir" id="mpk-BI-rhN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

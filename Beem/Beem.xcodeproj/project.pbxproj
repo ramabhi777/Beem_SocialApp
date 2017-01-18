@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1868B88B1E2F83D6005ADF9F /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868B88A1E2F83D6005ADF9F /* CameraManager.swift */; };
+		1868B88D1E2F8490005ADF9F /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868B88C1E2F8490005ADF9F /* VideoManager.swift */; };
+		18BF03AF1E2E373B0017D6D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF03AD1E2E373B0017D6D5 /* Main.storyboard */; };
+		18BF03B41E2E373B0017D6D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BF03B21E2E373B0017D6D5 /* LaunchScreen.storyboard */; };
+		18BF03C71E2E49780017D6D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BF03C11E2E49780017D6D5 /* Assets.xcassets */; };
+		18BF03C81E2E49780017D6D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF03C31E2E49780017D6D5 /* AppDelegate.swift */; };
+		18BF03C91E2E49780017D6D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF03C61E2E49780017D6D5 /* ViewController.swift */; };
+		18BF03CB1E2F484E0017D6D5 /* VideoEditTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF03CA1E2F484E0017D6D5 /* VideoEditTaskManager.swift */; };
+		18BF03CD1E2F48AF0017D6D5 /* AudioEditTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF03CC1E2F48AF0017D6D5 /* AudioEditTaskManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1868B88A1E2F83D6005ADF9F /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		1868B88C1E2F8490005ADF9F /* VideoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		18BF03A61E2E373A0017D6D5 /* Beem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BF03AE1E2E373B0017D6D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18BF03B31E2E373B0017D6D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18BF03B51E2E373C0017D6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BF03C11E2E49780017D6D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18BF03C31E2E49780017D6D5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18BF03C61E2E49780017D6D5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18BF03CA1E2F484E0017D6D5 /* VideoEditTaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEditTaskManager.swift; sourceTree = "<group>"; };
+		18BF03CC1E2F48AF0017D6D5 /* AudioEditTaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEditTaskManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18BF03A31E2E37360017D6D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1868B8881E2F83AA005ADF9F /* UtilsClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1868B8891E2F83C4005ADF9F /* ThirdPartyClasses */,
+			);
+			path = UtilsClasses;
+			sourceTree = "<group>";
+		};
+		1868B8891E2F83C4005ADF9F /* ThirdPartyClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1868B88A1E2F83D6005ADF9F /* CameraManager.swift */,
+			);
+			path = ThirdPartyClasses;
+			sourceTree = "<group>";
+		};
+		18BF039D1E2E37360017D6D5 = {
+			isa = PBXGroup;
+			children = (
+				18BF03A81E2E373A0017D6D5 /* Beem */,
+				18BF03A71E2E373A0017D6D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18BF03A71E2E373A0017D6D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BF03A61E2E373A0017D6D5 /* Beem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18BF03A81E2E373A0017D6D5 /* Beem */ = {
+			isa = PBXGroup;
+			children = (
+				18BF03BB1E2E49780017D6D5 /* Constants */,
+				18BF03BC1E2E49780017D6D5 /* CustomViews */,
+				18BF03BD1E2E49780017D6D5 /* Managers */,
+				18BF03C01E2E49780017D6D5 /* Resources */,
+				18BF03C21E2E49780017D6D5 /* SystemClasses */,
+				1868B8881E2F83AA005ADF9F /* UtilsClasses */,
+				18BF03C51E2E49780017D6D5 /* ViewControllers */,
+				18BF03B51E2E373C0017D6D5 /* Info.plist */,
+			);
+			path = Beem;
+			sourceTree = "<group>";
+		};
+		18BF03BB1E2E49780017D6D5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		18BF03BC1E2E49780017D6D5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		18BF03BD1E2E49780017D6D5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				18BF03BE1E2E49780017D6D5 /* SpecialistManagers */,
+				18BF03BF1E2E49780017D6D5 /* Task Managers */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		18BF03BE1E2E49780017D6D5 /* SpecialistManagers */ = {
+			isa = PBXGroup;
+			children = (
+				1868B88C1E2F8490005ADF9F /* VideoManager.swift */,
+			);
+			path = SpecialistManagers;
+			sourceTree = "<group>";
+		};
+		18BF03BF1E2E49780017D6D5 /* Task Managers */ = {
+			isa = PBXGroup;
+			children = (
+				18BF03CA1E2F484E0017D6D5 /* VideoEditTaskManager.swift */,
+				18BF03CC1E2F48AF0017D6D5 /* AudioEditTaskManager.swift */,
+			);
+			path = "Task Managers";
+			sourceTree = "<group>";
+		};
+		18BF03C01E2E49780017D6D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18BF03C11E2E49780017D6D5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18BF03C21E2E49780017D6D5 /* SystemClasses */ = {
+			isa = PBXGroup;
+			children = (
+				18BF03B21E2E373B0017D6D5 /* LaunchScreen.storyboard */,
+				18BF03AD1E2E373B0017D6D5 /* Main.storyboard */,
+				18BF03C31E2E49780017D6D5 /* AppDelegate.swift */,
+			);
+			path = SystemClasses;
+			sourceTree = "<group>";
+		};
+		18BF03C51E2E49780017D6D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18BF03C61E2E49780017D6D5 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18BF03A51E2E37360017D6D5 /* Beem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BF03B81E2E373C0017D6D5 /* Build configuration list for PBXNativeTarget "Beem" */;
+			buildPhases = (
+				18BF03A21E2E37360017D6D5 /* Sources */,
+				18BF03A31E2E37360017D6D5 /* Frameworks */,
+				18BF03A41E2E37360017D6D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beem;
+			productName = Beem;
+			productReference = 18BF03A61E2E373A0017D6D5 /* Beem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18BF039E1E2E37360017D6D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = mobulous;
+				TargetAttributes = {
+					18BF03A51E2E37360017D6D5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K9EAL36C8L;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 18BF03A11E2E37360017D6D5 /* Build configuration list for PBXProject "Beem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18BF039D1E2E37360017D6D5;
+			productRefGroup = 18BF03A71E2E373A0017D6D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18BF03A51E2E37360017D6D5 /* Beem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18BF03A41E2E37360017D6D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BF03B41E2E373B0017D6D5 /* LaunchScreen.storyboard in Resources */,
+				18BF03C71E2E49780017D6D5 /* Assets.xcassets in Resources */,
+				18BF03AF1E2E373B0017D6D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18BF03A21E2E37360017D6D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BF03CB1E2F484E0017D6D5 /* VideoEditTaskManager.swift in Sources */,
+				18BF03C81E2E49780017D6D5 /* AppDelegate.swift in Sources */,
+				18BF03C91E2E49780017D6D5 /* ViewController.swift in Sources */,
+				18BF03CD1E2F48AF0017D6D5 /* AudioEditTaskManager.swift in Sources */,
+				1868B88B1E2F83D6005ADF9F /* CameraManager.swift in Sources */,
+				1868B88D1E2F8490005ADF9F /* VideoManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18BF03AD1E2E373B0017D6D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BF03AE1E2E373B0017D6D5 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		18BF03B21E2E373B0017D6D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18BF03B31E2E373B0017D6D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18BF03B61E2E373C0017D6D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18BF03B71E2E373C0017D6D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18BF03B91E2E373C0017D6D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K9EAL36C8L;
+				INFOPLIST_FILE = Beem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobulous.beem.Beem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		18BF03BA1E2E373C0017D6D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K9EAL36C8L;
+				INFOPLIST_FILE = Beem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobulous.beem.Beem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18BF03A11E2E37360017D6D5 /* Build configuration list for PBXProject "Beem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BF03B61E2E373C0017D6D5 /* Debug */,
+				18BF03B71E2E373C0017D6D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BF03B81E2E373C0017D6D5 /* Build configuration list for PBXNativeTarget "Beem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BF03B91E2E373C0017D6D5 /* Debug */,
+				18BF03BA1E2E373C0017D6D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18BF039E1E2E37360017D6D5 /* Project object */;
+}

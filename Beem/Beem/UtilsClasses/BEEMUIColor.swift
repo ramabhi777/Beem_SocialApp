@@ -10,7 +10,7 @@ import UIKit
 
 extension UIColor {
     
-    open class var beemButtonColor : UIColor {
+    open class var BEEMApplicationColor : UIColor {
         return UIColor(colorLiteralRed: 131/255.0, green: 193.0/255.0, blue: 29.0/255.0, alpha: 1.0)
     }
 }

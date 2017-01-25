@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		026B42B2888DC69E20D069D8 /* Pods_Beem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA446AF232AF12EBC793F10 /* Pods_Beem.framework */; };
 		18100FB71E321993004C2C2A /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18100FB61E321993004C2C2A /* CameraManager.swift */; };
+		183542CD1E3882B6008EE6D5 /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183542CC1E3882B6008EE6D5 /* ValidationManager.swift */; };
+		183542D01E388322008EE6D5 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183542CF1E388322008EE6D5 /* ErrorModel.swift */; };
+		183542D21E38B599008EE6D5 /* BEEMSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183542D11E38B599008EE6D5 /* BEEMSignUpViewController.swift */; };
 		1868B88D1E2F8490005ADF9F /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868B88C1E2F8490005ADF9F /* VideoManager.swift */; };
 		188824951E35D27200BF5454 /* BEEMLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188824941E35D27200BF5454 /* BEEMLoginViewController.swift */; };
 		1897A7061E30D97F00DD35C8 /* EditVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897A7051E30D97F00DD35C8 /* EditVideoViewController.swift */; };
@@ -25,6 +28,9 @@
 
 /* Begin PBXFileReference section */
 		18100FB61E321993004C2C2A /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		183542CC1E3882B6008EE6D5 /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		183542CF1E388322008EE6D5 /* ErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		183542D11E38B599008EE6D5 /* BEEMSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEEMSignUpViewController.swift; sourceTree = "<group>"; };
 		1868B88C1E2F8490005ADF9F /* VideoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
 		188824941E35D27200BF5454 /* BEEMLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEEMLoginViewController.swift; sourceTree = "<group>"; };
 		1897A7051E30D97F00DD35C8 /* EditVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVideoViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183542CE1E388311008EE6D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				183542CF1E388322008EE6D5 /* ErrorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1868B8881E2F83AA005ADF9F /* UtilsClasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +111,7 @@
 			children = (
 				18BF03BB1E2E49780017D6D5 /* Constants */,
 				18BF03BC1E2E49780017D6D5 /* CustomViews */,
+				183542CE1E388311008EE6D5 /* Models */,
 				18BF03BD1E2E49780017D6D5 /* Managers */,
 				18BF03C01E2E49780017D6D5 /* Resources */,
 				18BF03C21E2E49780017D6D5 /* SystemClasses */,
@@ -134,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				1868B88C1E2F8490005ADF9F /* VideoManager.swift */,
+				183542CC1E3882B6008EE6D5 /* ValidationManager.swift */,
 			);
 			path = SpecialistManagers;
 			sourceTree = "<group>";
@@ -171,6 +187,7 @@
 				18BF03C61E2E49780017D6D5 /* RecordVideoViewController.swift */,
 				1897A7051E30D97F00DD35C8 /* EditVideoViewController.swift */,
 				188824941E35D27200BF5454 /* BEEMLoginViewController.swift */,
+				183542D11E38B599008EE6D5 /* BEEMSignUpViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -316,13 +333,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183542CD1E3882B6008EE6D5 /* ValidationManager.swift in Sources */,
 				18BF03CB1E2F484E0017D6D5 /* VideoEditTaskManager.swift in Sources */,
 				188824951E35D27200BF5454 /* BEEMLoginViewController.swift in Sources */,
 				18100FB71E321993004C2C2A /* CameraManager.swift in Sources */,
 				18BF03C81E2E49780017D6D5 /* AppDelegate.swift in Sources */,
 				1897A7061E30D97F00DD35C8 /* EditVideoViewController.swift in Sources */,
+				183542D01E388322008EE6D5 /* ErrorModel.swift in Sources */,
 				18BF03C91E2E49780017D6D5 /* RecordVideoViewController.swift in Sources */,
 				18A3B8861E3767F4000F563F /* BEEMUIColor.swift in Sources */,
+				183542D21E38B599008EE6D5 /* BEEMSignUpViewController.swift in Sources */,
 				18A3B8841E37620C000F563F /* BEEMUIButton.swift in Sources */,
 				18BF03CD1E2F48AF0017D6D5 /* AudioEditTaskManager.swift in Sources */,
 				1868B88D1E2F8490005ADF9F /* VideoManager.swift in Sources */,

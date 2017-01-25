@@ -21,12 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="ho3-i3-zFu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="ho3-i3-zFu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ho3-i3-zFu" secondAttribute="bottom" id="DX9-3p-UEI"/>
+                            <constraint firstItem="ho3-i3-zFu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="SoG-fo-a9s"/>
+                            <constraint firstItem="ho3-i3-zFu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="np6-dN-KvN"/>
+                            <constraint firstAttribute="trailing" secondItem="ho3-i3-zFu" secondAttribute="trailing" id="tNR-Q5-7MK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

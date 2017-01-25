@@ -17,9 +17,29 @@ extension UIButton {
         loginButton.setTitle(buttonTitle, for: .normal)
         loginButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 21)
         loginButton.setTitleColor(UIColor.white, for: .normal)
-        loginButton.layer.backgroundColor = UIColor.beemButtonColor.cgColor
+        loginButton.layer.backgroundColor = UIColor.BEEMApplicationColor.cgColor
         loginButton.layer.cornerRadius = 20.0
         
         return loginButton
     }
+}
+
+extension UIViewController {
+    //MARK: Keyboard Hide
+    func hideKeyboardWhenTappedAround() {
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func unregisterKeyboardNotifications() {
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
 }
